@@ -76,7 +76,11 @@ console.log(newArr2);
 console.log(arr.filter(item=> item%2))
 
 let cars = ["Saab", "Volvo", "BMW"];
-console.log(cars.filter(item=> item.includes('W')))
+console.log(cars.filter(item=> item.includes('W')));
+
+console.log([1,2,3,4].reduce((total,item)=>{
+           return total+item;
+},0));
 
 
 
