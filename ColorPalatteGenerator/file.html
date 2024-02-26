@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 80%; 
+            background-color: #b46a6a; 
+            display: flex; 
+        }
+
+        .column {
+            height: 90vh;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container" id="container">
+</div>
+
+<button onclick="addNewColumn()">+</button>
+<button onclick="generateRandomColor()">Generate Random Color</button>
+
+<script>
+    function addNewColumn() {
+        var column = document.createElement("div");
+        column.className = "column";
+        column.innerHTML = "<h2>Column</h2>";
+
+        document.getElementById("container").appendChild(column);
+    }
+
+    function generateRandomColor() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+
+        document.getElementById("container").style.backgroundColor = color;
+    }
+    const array=document.getElementsByClassName('column');
+    
+</script>
+
+</body>
+</html>
