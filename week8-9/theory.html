@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo">This is text</div>
+    <button onClick="onBtn()"></button>
+    <script>
+        var myPromise=new Promise(function(myResolve, myReject){
+            let x=0; //some logic which takes some time
+           // setTimeout(5000)
+
+            if (x==0){
+                myResolve("Done");
+            }
+            else{
+                myReject("Error");
+            }
+
+        }
+    )
+
+    function onBtn(){
+        myPromise.then(function(value){
+            display(value);
+        },
+    function(value){
+        display(value);
+    })
+    }
+
+    function display(some){
+        document.getElementById("demo").innerHTML=some;
+
+    }
+    </script>
+</body>
+</html>

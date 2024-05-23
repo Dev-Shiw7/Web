@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <div>
+       
+            <button id="add"> + 
+            </button>
+            <p id="num">0</p>
+           
+            <button id="sub"> - </button>
+            
+     
+    </div>
+    <script>
+        const display2=document.getElementById("num");
+const add=document.getElementById("add");
+const sub=document.getElementById("sub");
+let count=localStorage.getItem(display2);
+
+
+
+console.log(display2);
+
+function updateNum(){
+    display2.textContent=count;
+}
+add.addEventListener("click", function(){
+    count++;
+    localStorage.setItem(display2,count);
+    updateNum();
+})
+sub.addEventListener("click", function(){
+    if(count>0)
+    count--;
+    updateNum();
+    localStorage.setItem(display2. count);
+
+})
+
+updateNum();
+    </script>
+</body>
+</html>

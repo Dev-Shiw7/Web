@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            color: rgb(31, 89, 197);
+        }
+        h2{
+            text-align: center;
+            color: rgb(10, 55, 137);
+        }
+        div{
+            text-align: center;
+            color: rgb(147, 173, 222);
+           
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h1>Hi!</h1>
+    <h2 >You are on the next page</h2></div>
+    <button onclick="logout()">Log Out</button>
+
+
+
+
+    <script>
+    function logout(){      
+        localStorage.removeItem('UserLoggedInSuccessful');
+        localStorage.removeItem('Shiwani');
+        // Redirect to a different page or update UI as needed
+        location.reload();
+        window.location.href = 'task1.html';  
+
+
+        }</script>
+</body>
+</html>
