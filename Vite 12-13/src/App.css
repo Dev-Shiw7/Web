@@ -1,0 +1,33 @@
+.Mcontainter{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+.Ccontainer{
+  height: 450;
+  width: 500;
+}
+
+body{
+  background-color: rgb(22, 106, 90);
+}
+
+.addbtn{
+  background-color: rgb(77, 85, 67);
+  size: 10cap;
+}
+
+.boxTodo{
+  background-color: white;
+}
+
+.inputcontainer{
+  display: flex;
+  justify-content: center;
+
+} 
+.icon{
+  background-color: white;
+}
