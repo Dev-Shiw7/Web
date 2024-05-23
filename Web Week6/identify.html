@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+   <!-- // <textarea name="my text area" id="tA" cols="30" rows="10"></textarea> -->
+    <button onclick="addTask()">Add Task</button>
+    <button onclick="removeTask()">Remove</button>
+    <input type="text" id="txt"  placeholder="Add your tasks here">
+    <ul id="tA"></ul>
+</div>
+
+    <script>
+        const ta=document.getElementById("tA");
+        const tF=document.getElementById("txt");
+
+        function addTask(){
+          const myTextField=  document.getElementById('txt');
+          var tval= myTextField.value
+
+           // console.log(tval);
+        
+           var li=document.createElement('div');
+            li.innerText=tval
+            tA.appendChild(li);
+            myTextField.value = ''
+            const remove=document.createElement('button');
+            
+           
+        }
+
+        
+      
+    
+    
+
+    </script>
+</body>
+</html>
