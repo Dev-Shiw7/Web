@@ -1,0 +1,7 @@
+.step {
+    /* Your default button styles */
+}
+
+.step.completed {
+    background-color: green; /* Change color for completed steps */
+}
